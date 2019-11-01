@@ -1,0 +1,18 @@
+makefile作用：
+对linux下命令行的简化
+
+the format in makefile(makefile中的格式用法):
+target:<prerequist>
+<Tab> <command>
+
+target:是makefile的目标，可以是目标文件，也可以是命令行的缩写别名
+preprequist:command命令需要的依赖文件
+Tab:空格键
+command:linux下指令
+
+特别是对于文件的编译链接：
+以如何顺序进行依赖文件的编译;
+怎样对编译好后的中间文件进行链接;
+如果源文件以及头文件有改动了，如何进行编译？
+makefile对于上述问题给出了处理规则，只要写好一个makefile，使用make这个命令\
+就可以对源码进行自动编译
